@@ -1,0 +1,136 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.app {
+  text-align: center;
+}
+
+.header {
+  background-color: #000;
+  padding: 20px;
+}
+
+.header > h2 {
+  color: #fff;
+  font-size: 18px;
+}
+
+.todo-wrapper {
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+.todo-input input[type='text'] {
+  width: 100%;
+  line-height: 28px;
+  padding: 5px 5px 5px 20px;
+  border: 1px solid #666;
+}
+
+.todo-input,
+.todo-list {
+  margin: 20px 0; 
+}
+
+.todo-input {
+  margin-bottom: 25px;
+}
+
+.btn-primary {
+  width: 100%;
+}
+
+div[class^='col-'] {
+  text-align: left;
+}
+
+.todo-wrapper > div[class^='col-'] {
+  border: 2px solid #666;
+}
+
+li.checkbox-item {
+  list-style: none;
+  border-top: 1px solid #ccc;
+  position: relative;
+  padding: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+li.checkbox-item:first-child {
+  border-top: 0;
+}
+
+li.checkbox-item > input[type="checkbox"] {
+  margin: 5px 0 0 0;
+}
+
+li.checkbox-item > label {
+  margin-bottom: 0;
+  padding: 0 15px 0 5px;
+}
+
+li.checkbox-item.checked > label {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.delete-item {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  color: #666;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+li.checked > .delete-item {
+  color: #c72522;
+}
+
+.delete-item:hover,
+.delete-item:active {
+  text-decoration: none;
+  color: #c72522;
+}
+
+.filters > a {
+  margin: 0 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.filters > a:hover,
+.filters > a:focus
+{
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.filters > a.selected {
+  background-color: #eee;
+  font-weight: bold;
+}
+
+.todo-footer {
+  padding: 10px;
+}
+
+.clear-link {
+  text-align: right;
+}
+
+// media query
+
+@media screen and (max-width: 767px) {  } 
+
+@media screen and (max-width: 991px) { }
+
+
+@media screen and (max-width: 1199px)  {}
+
+
+@media screen and (min-width: 1200px)  {}
