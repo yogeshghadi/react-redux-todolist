@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react'
 
 const TodoInput = (props) => (
   <div className="row todo-input">
@@ -11,4 +11,4 @@ const TodoInput = (props) => (
   </div>
 )
 
-export default TodoInput;
+export default TodoInput

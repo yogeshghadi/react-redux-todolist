@@ -1,22 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 import 'bootstrap/dist/css/bootstrap.css'
-import './styles/index.css';
-import App from './containers';
-//import registerServiceWorker from './registerServiceWorker';
-//import { BrowserRouter, Route, Link } from 'react-router-dom';
+import './styles/index.css'
+import App from './containers'
 
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+//import registerServiceWorker from './registerServiceWorker'
 
+import {BrowserRouter as Router, Route} from 'react-router-dom'
 
-const onChangeHandler = () => {
-  console.log('path changed');
-}
+import { Provider }  from 'react-redux'
+import store from './store'
 
 ReactDOM.render(
+  <Provider store={store}>
     <Router>
-      <Route path="/" component={App} onChange={onChangeHandler} >
+      <Route path="/" component={App} >
       </Route>
     </Router>
-  , document.getElementById('root'));
+  </Provider>
+  , document.getElementById('root'))
 //registerServiceWorker();
