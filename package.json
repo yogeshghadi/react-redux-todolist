@@ -22,7 +22,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://yogeshghadi.github.io/react-todolist/",
+  "homepage": "https://yogeshghadi.github.io/react-redux-todolist/",
   "devDependencies": {
     "gh-pages": "^1.0.0"
   }
