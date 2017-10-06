@@ -147,7 +147,7 @@ class App extends Component {
       window.location.hash = ''
 
       getListDispatch(todolist)
-      getInputvalueDispatch(inputValue)
+      getInputvalueDispatch('')
 
       this.getListActive()
       this.getListCompleted()
